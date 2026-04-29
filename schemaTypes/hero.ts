@@ -12,6 +12,13 @@ export const hero = defineType({
       validation: (r) => r.required(),
     }),
     defineField({
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {source: 'name'},
+      validation: (r) => r.required(),
+    }),
+    defineField({
       name: 'photo',
       title: 'Фото',
       type: 'image',
